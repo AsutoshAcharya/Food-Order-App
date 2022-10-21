@@ -34,6 +34,7 @@ function AvailableMeals() {
     return (
       <>
         <MealItem
+          id={meals.id}
           key={meals.id}
           name={meals.name}
           description={meals.description}
