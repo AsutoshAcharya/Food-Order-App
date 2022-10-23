@@ -2,6 +2,9 @@ import React from "react";
 import classes from "./MealItemForm.module.css";
 import Input from "../../UI/Input";
 function MealItemForm(props) {
+  const eve = (event) => {
+    event.preventDefault();
+  };
   return (
     <form className={classes.form}>
       <Input
@@ -15,7 +18,7 @@ function MealItemForm(props) {
           defaultValue: "1",
         }}
       />
-      <button>+ Add</button>
+      <button onClick={eve}>+ Add</button>
     </form>
   );
 }

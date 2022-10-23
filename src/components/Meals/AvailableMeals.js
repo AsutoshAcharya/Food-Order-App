@@ -32,15 +32,15 @@ const DUMMY_MEALS = [
 function AvailableMeals() {
   const mealsList = DUMMY_MEALS.map((meals) => {
     return (
-      <>
+      <React.Fragment>
         <MealItem
-          id={meals.id}
           key={meals.id}
+          id={meals.id}
           name={meals.name}
           description={meals.description}
           price={meals.price}
         />
-      </>
+      </React.Fragment>
     );
   });
 
